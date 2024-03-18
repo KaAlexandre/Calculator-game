@@ -134,7 +134,7 @@ public class Main {
                     }
                 }break;
                 default:{System.out.println("Nenhuma das opções escolhidas, fechando o programa...");
-                    calculator_open=false;;
+                    calculator_open=false;
                 }
 
             }
