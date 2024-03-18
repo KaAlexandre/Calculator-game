@@ -30,6 +30,8 @@ public class Main {
                             System.out.println("Infelizmente você errou :(");
                         }
                         if (i == qtd_calculos-1) {
+                            System.out.println("você possui um total de " + score + " acertos!");
+                            System.out.println("____________________");
                             System.out.println("você ainda quer usar o calculator? [S/N]");
                             scan.nextLine();
                             String validacao = scan.nextLine();
@@ -56,6 +58,8 @@ public class Main {
                             System.out.println("Infelizmente você errou :(");
                         }
                         if (i == qtd_calculos-1) {
+                            System.out.println("você possui um total de " + score + " acertos!");
+                            System.out.println("____________________");
                             System.out.println("você ainda quer usar o calculator? [S/N]");
                             scan.nextLine();
                             String validacao = scan.nextLine();
@@ -71,8 +75,8 @@ public class Main {
                     System.out.println("Quantos cálculos você quer resolver?");
                     int qtd_calculos=scan.nextInt();
                     for (int i = 0; i < qtd_calculos; i++) {
-                        int numero_aleatorio1 = numeros.nextInt(10);
-                        int numero_aleatorio2 = numeros.nextInt(10);
+                        int numero_aleatorio1 = numeros.nextInt(100);
+                        int numero_aleatorio2 = numeros.nextInt(100);
                         int multi_valores = numero_aleatorio1 * numero_aleatorio2;
                         System.out.println("Qual é o valor de " + numero_aleatorio1 + "*" + numero_aleatorio2 + "?");
                         int resposta = scan.nextInt();
@@ -83,6 +87,8 @@ public class Main {
                             System.out.println("Infelizmente você errou :(");
                         }
                         if (i == qtd_calculos-1) {
+                            System.out.println("você possui um total de " + score + " acertos!");
+                            System.out.println("____________________");
                             System.out.println("você ainda quer usar o calculator? [S/N]");
                             scan.nextLine();
                             String validacao = scan.nextLine();
@@ -98,8 +104,8 @@ public class Main {
                     System.out.println("Quantos cálculos você quer resolver?");
                     int qtd_calculos=scan.nextInt();
                     for (int i = 0; i < qtd_calculos; i++) {
-                        int numero_aleatorio1 = numeros.nextInt(16);
-                        int numero_aleatorio2 = numeros.nextInt(16);
+                        int numero_aleatorio1 = numeros.nextInt(100);
+                        int numero_aleatorio2 = numeros.nextInt(100);
                         if (numero_aleatorio2 != 0 && numero_aleatorio1 % numero_aleatorio2 == 0) {
                             int divisao_valores = numero_aleatorio1 / numero_aleatorio2;
 
@@ -115,6 +121,8 @@ public class Main {
                             i--;
                         }
                         if (i == qtd_calculos-1) {
+                            System.out.println("você possui um total de " + score + " acertos!");
+                            System.out.println("____________________");
                             System.out.println("você ainda quer usar o calculator? [S/N]");
                             scan.nextLine();
                             String validacao = scan.nextLine();
@@ -126,6 +134,7 @@ public class Main {
                     }
                 }break;
                 default:{System.out.println("Nenhuma das opções escolhidas, fechando o programa...");
+                    calculator_open=false;;
                 }
 
             }
